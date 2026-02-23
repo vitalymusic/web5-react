@@ -3,6 +3,7 @@ import './App.css'
 import Header from './Components/Header'
 import Fūteris from './Components/Footer';
 import CardGrid from './Components/CardGrid';
+import Navigacija from './Components/Navigacija';
 
 
 
@@ -10,7 +11,9 @@ function App() {
 
   return (
     <>
+      <Navigacija></Navigacija>
       <Header ></Header>
+
       <h1>Hello React</h1>
       <p>Te būs rindkopa ar tekstu!</p>
       <ol>
