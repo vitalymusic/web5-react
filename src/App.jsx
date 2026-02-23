@@ -4,6 +4,7 @@ function App() {
 
   return (
     <>
+    
       <h1>Hello React</h1>
       <p>Te būs rindkopa ar tekstu!</p>
       <ol>
