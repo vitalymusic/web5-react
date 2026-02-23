@@ -1,10 +1,13 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
+import Header from './Header'
+
 
 function App() {
 
   return (
     <>
-    
+      <Header ></Header>
       <h1>Hello React</h1>
       <p>Te būs rindkopa ar tekstu!</p>
       <ol>
