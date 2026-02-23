@@ -2,6 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 import Header from './Components/Header'
 import Fūteris from './Components/Footer';
+import CardGrid from './Components/CardGrid';
+
 
 
 function App() {
@@ -20,8 +22,9 @@ function App() {
       </ol>
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" style={{width:"200px"}}></img>
 
+      <CardGrid />
       <Fūteris></Fūteris>
-      
+
     </>
   )
 }
