@@ -45,9 +45,6 @@ function Tabi() {
                         trešais saturs
                     </div>
                 )}
-        
-        
-        
     </div>
     <h1>Saturs:</h1>
     <div className="content">
@@ -55,8 +52,6 @@ function Tabi() {
                   return <p key={i}>{item.body}</p>
             })}         
     </div>
-    {console.log(activeTab)}
-    
     </>);
 }
 
