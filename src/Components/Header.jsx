@@ -1,4 +1,5 @@
 import './header.css'
+import LoginModal from './LoginModal';
 
 function Header() {
     return(
@@ -6,6 +7,7 @@ function Header() {
            <header>
                 <h1>Galvenais virsraksts</h1>
                 <h2>Apakšvirsraksts</h2>
+                <LoginModal></LoginModal>
             </header> 
         </>
     )

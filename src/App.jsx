@@ -4,6 +4,7 @@ import Header from './Components/Header'
 import Fūteris from './Components/Footer';
 import CardGrid from './Components/CardGrid';
 import Navigacija from './Components/Navigacija';
+import Tabi from './Components/Tabi';
 
 
 
@@ -16,6 +17,8 @@ function App() {
 
       <h1>Hello React</h1>
       <p>Te būs rindkopa ar tekstu!</p>
+      <Tabi></Tabi>
+
       <ol>
         <li>Tests</li>
         <li>Tests</li>

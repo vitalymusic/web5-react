@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import  MyCard from './MyCard';
+import Akordeons from './Akoredeons';
 
 function CardGrid() {
   return (
@@ -17,6 +18,9 @@ function CardGrid() {
         </Col>
         <Col>
             <MyCard img="attels3.jpg" title="Kartiņa 3" text="Te būs rakstīts tekst3" buttonText="Pogas teksts3"></MyCard>
+        </Col>
+        <Col>
+            <Akordeons></Akordeons>
         </Col>
       </Row>
     </Container>
