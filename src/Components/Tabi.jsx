@@ -6,14 +6,16 @@ function Tabi() {
     const [content, setContent] = useState([]);
 
 
-    useEffect(()=>{
-         fetch('https://jsonplaceholder.typicode.com/posts/1/comments')
-            .then((response) => response.json())
-            .then((json) => setContent(json));   
-    },[])
+    // useEffect(()=>{
+    //      fetch('https://jsonplaceholder.typicode.com/posts/1/comments')
+    //         .then((response) => response.json())
+    //         .then((json) => setContent(json));   
+    // },[])
 
      useEffect(()=>{
-        console.log("funkcija palaižas katru reizi, kad nomainas elementa stāvoklis");
+            fetch(`https://jsonplaceholder.typicode.com/posts/${activeTab}/comments`)
+            .then((response) => response.json())
+            .then((json) => setContent(json));   
     },[activeTab])
 
     // const handleSetActiveTab = (item)=>{setActiveTab(item)}
@@ -28,9 +30,7 @@ function Tabi() {
     <div className="tabsContent">
            {activeTab === 1 && (
                     <div className="tab1">
-                        {content.map((item,i)=>{
-                            return <p key={i}>{item.body}</p>
-                        })}
+                          Pirmais saturs
                     </div>
                 )}
 
@@ -48,6 +48,12 @@ function Tabi() {
         
         
         
+    </div>
+    <h1>Saturs:</h1>
+    <div className="content">
+            {content.map((item,i)=>{
+                  return <p key={i}>{item.body}</p>
+            })}         
     </div>
     {console.log(activeTab)}
     
