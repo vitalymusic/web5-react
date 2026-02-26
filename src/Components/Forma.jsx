@@ -14,20 +14,22 @@ function Forma() {
      const handlesubmit =  (e)=>{
         e.preventDefault();
 
-        data = JSON.stringify({
-            email:emailField,
-            message:textareaField
-        })
-
         fetch('https://jsonplaceholder.typicode.com/posts',{
             method: 'POST',
-            body:data,
+            body:JSON.stringify({
+                        email:emailField,
+                        message:textareaField
+                    }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
             },
         })
         .then((response) => response.json())
-        .then((json) => setResp(json));
+        .then((json) => {
+            
+            setemailField("")
+            settextareaField("")
+        });
 
      }   
 
