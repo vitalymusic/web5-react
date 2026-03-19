@@ -15,6 +15,7 @@ function Navigacija() {
             <Nav.Link as={NavLink} to="/">Galvenā</Nav.Link>
             <Nav.Link as={NavLink} to="/about">Par mums</Nav.Link>
             <Nav.Link as={NavLink} to="/contacts">Kontakti</Nav.Link>
+            <Nav.Link as={NavLink} to="/users">Lietotāji</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
