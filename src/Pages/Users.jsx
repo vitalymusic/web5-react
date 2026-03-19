@@ -13,7 +13,8 @@ function Users() {
     return (
         <>
             <h1>Users</h1>
-            {usersData && usersData.users.map((item, i) => ( // <-- pārbaude + return ar ()
+            {usersData && usersData.users.map((item, i) => ( 
+                // <-- pārbaude + return ar ()
                 <>
                 <NavLink  className="btn btn-primary d-block m-3" key={i} to={"/user/" + item.id}>
                     {item.firstName} {item.lastName}
